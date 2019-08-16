@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Control</title>
+    <style>
+      select.disabled {
+        opacity: .5;
+      }
+      select.disabled:hover {
+        cursor: not-allowed;
+      }
+	  .ctrl-container div {
+		padding: 10px;
+	  }
+	  .ctrl-container div span {
+		margin-right: 5px;
+	  }
+    </style>
+  </head>
+  <body>
+
+    <div class="ctrl-container">
+	
+	  <div>
+		<span>Select Task</span>
+		<select id="task-select"></select>
+	  </div>
+
+	  <div>
+		<span>Select SDI</span>
+		<select id="sdi-select">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+		</select>
+	  </div>
+	  
+	  <div>
+		<span>Select Action</span>
+		<button id="start-ctrl">Start</button>
+		<button id="stop-ctrl">Stop</button>
+	  </div>
+
+    </div>
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="app3.js"></script>
+  </body>
+</html>
